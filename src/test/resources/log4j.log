@@ -1,0 +1,15 @@
+[INFO ] 2020-12-17 01:24:10 WebDriverManager:605 :resolveDriverVersion - message:Using chromedriver 87.0.4280.88 (resolved driver for Chrome 87)
+[INFO ] 2020-12-17 01:24:10 WebDriverManager:661 :exportDriver - message:Exporting webdriver.chrome.driver as /Users/mariabezbah/.cache/selenium/chromedriver/mac64/87.0.4280.88/chromedriver
+[INFO ] 2020-12-17 01:24:16 WebDriverManager:605 :resolveDriverVersion - message:Using chromedriver 87.0.4280.88 (resolved driver for Chrome 87)
+[INFO ] 2020-12-17 01:24:16 WebDriverManager:661 :exportDriver - message:Exporting webdriver.chrome.driver as /Users/mariabezbah/.cache/selenium/chromedriver/mac64/87.0.4280.88/chromedriver
+[INFO ] 2020-12-17 01:24:16 MainPage:56 :oenMainPage - message:Opening main page of the web site
+[INFO ] 2020-12-17 01:24:20 MainPage:56 :oenMainPage - message:Opening main page of the web site
+[INFO ] 2020-12-17 01:24:23 MainPage:61 :findIframe - message:Finding and waiting that iframe is visible by locator[[ChromeDriver: chrome on MAC (aeca2147058c1edc0185b3d502852469)] -> xpath: //iframe[@id='framelive']]
+[INFO ] 2020-12-17 01:24:24 MainPage:66 :waitingUntilLoaderisVisible - message:Finding and waiting until loader is visible by locatorProxy element for: DefaultElementLocator 'By.xpath: //div[@id='loadingMessage']'
+[INFO ] 2020-12-17 01:24:26 MainPage:61 :findIframe - message:Finding and waiting that iframe is visible by locator[[ChromeDriver: chrome on MAC (37fdcc99ad2f979a8c3f724e2edf342d)] -> xpath: //iframe[@id='framelive']]
+[INFO ] 2020-12-17 01:24:26 MainPage:66 :waitingUntilLoaderisVisible - message:Finding and waiting until loader is visible by locatorProxy element for: DefaultElementLocator 'By.xpath: //div[@id='loadingMessage']'
+[INFO ] 2020-12-17 01:24:34 MainPage:94 :fillAlreadyUsedEmail - message:Finding creation subscription field for email by locator[[ChromeDriver: chrome on MAC (aeca2147058c1edc0185b3d502852469)] -> xpath: //input[@name='email']]
+[INFO ] 2020-12-17 01:24:34 MainPage:96 :fillAlreadyUsedEmail - message:Finding and clicking subscribe button by locator[[ChromeDriver: chrome on MAC (aeca2147058c1edc0185b3d502852469)] -> xpath: //input[@class='btn btn-primary float-xs-right hidden-xs-down']]
+[INFO ] 2020-12-17 01:24:35 MainPage:102 :getSuccessSubscriptionMessage - message:success subscription email appears
+[INFO ] 2020-12-17 01:24:36 MainPage:117 :checkNumberOfLanguages - message:count the number of languages
+[INFO ] 2020-12-17 01:24:37 MainPage:126 :getTextUkrItem - message:check whether ukr item exists in the languages list

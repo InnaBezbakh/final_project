@@ -8,6 +8,11 @@
     <artifactId>final_project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <browser>chrome</browser>
+        <aspectj.version>1.9.6</aspectj.version>
+    </properties>
+
     <build>
         <pluginManagement>
             <plugins>
@@ -77,9 +82,6 @@
         </pluginManagement>
     </build>
 
-    <properties>
-        <aspectj.version>1.9.6</aspectj.version>
-    </properties>
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -115,12 +117,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.1</version>
-            <scope>test</scope>
-        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -128,12 +124,6 @@
             <version>1.18.16</version>
         </dependency>
 
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>6.9.0</version>
-            <scope>test</scope>
-        </dependency>
 
         <dependency>
             <groupId>io.cucumber</groupId>

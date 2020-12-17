@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import pages.BasePage;
 
 public class DriverManager {
@@ -35,6 +36,10 @@ public class DriverManager {
         else if (passedBrowser.equals("opera")){
             WebDriverManager.operadriver().setup();
             driver = new OperaDriver();
+        }
+        else if (passedBrowser.equals("safari")){
+            WebDriverManager.chromiumdriver().setup();
+            driver = new SafariDriver();
         }
         else{
             throw new IllegalArgumentException("Wrong parametr passed");

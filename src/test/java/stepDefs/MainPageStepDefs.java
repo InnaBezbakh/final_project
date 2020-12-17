@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.assertj.core.api.Assertions;
+import org.openqa.selenium.WebElement;
 import pages.MainPage;
 
 public class MainPageStepDefs {
@@ -22,7 +23,8 @@ public class MainPageStepDefs {
                // Thread.currentThread().getId(), email);
         mainPage.findIframe();
         mainPage.waitingUntilLoaderisVisible();
-        mainPage.scrollToVisibleBlockNewsLetter();
+        WebElement emailFieldForSubscription = mainPage.getEmailFieldForSubscription();//i find element and init it on the main page
+        mainPage.scrollToVisibleElement(emailFieldForSubscription); // i use that method to the element above
         mainPage.fillAlreadyUsedEmail(email);
     }
     @Then("I see success message {string} appears")
@@ -42,13 +44,13 @@ public class MainPageStepDefs {
 
     @Then("I see that {int} languages exists in top menu")
     public void i_see_that_languages_exists_in_top_menu(int numOfLang){
-        int actualActualLangNumber = mainPage.checkNumberOfLanguages();
-        Assertions.assertThat(actualActualLangNumber).isGreaterThanOrEqualTo(numOfLang);
+        int actualLangNumber = mainPage.checkNumberOfLanguages();
+        Assertions.assertThat(actualLangNumber).isGreaterThanOrEqualTo(numOfLang);
     }
     @And("I see that {string} exist in list of languages")
     public void i_see_that_exist_in_list_of_languages(String ukrSelectItem){
-        String actualTextUkrItem = mainPage.getTextUkrItem();
-        Assertions.assertThat(actualTextUkrItem).isEqualTo(ukrSelectItem);
+        boolean actualTextUkrItem = mainPage.getTextUkrItem(ukrSelectItem);
+        Assertions.assertThat(actualTextUkrItem).isEqualTo(true);
     }
 
 
